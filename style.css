@@ -1,0 +1,384 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+:root{
+--maincolro:#ff7200;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 23px 2vw;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+.navlink ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    width: 50vw;
+}
+.navlink ul i{
+    color: white;
+    position: relative;
+    
+    display: none;
+}
+.navlink a{
+    text-decoration: none;
+    color: white;
+}
+body::before{
+    content: "";
+background:linear-gradient(to top, rgba(0, 0, 0, 0.57)50%,rgba(0, 0, 0, 0.57)50%),url(1.jpg);
+position: absolute;
+height:100vh;
+background-position: center;
+z-index: -1;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100vw;
+margin: 0;
+padding: 0;
+
+}
+.logo{
+    color: var(--maincolro);
+    font-size: 30px;
+    font-weight: 900;
+}
+.searchnav{
+    border: 1px solid var(--maincolro);
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.searchnav button{
+height:5vh;
+width: 7vw;
+position: relative;
+letter-spacing: 2px;
+top: 1px;
+padding: 2px;
+font-size: 20px;
+box-sizing: border-box;
+}
+input{
+    background-color: transparent;
+    outline:none;
+height: 2.3vw;
+color: white;
+    border: 2px solid transparent;
+}
+input::placeholder{
+ font-weight: 500;
+    color: rgba(255, 255, 255, 0.593);
+    
+}
+input:focus{
+    position: relative;
+    border: 2px solid var(--maincolro);
+}
+h1 span{
+    color: var(--maincolro);
+}
+button{
+    background-color: var(--maincolro);
+    color: white;
+    border: none;
+    font-weight: 800;
+}
+.leftitems{
+width: 60vw;
+margin-top: 150px;
+}
+h1{
+    font-size:6vw;
+    color: white;
+}
+.leftitems P{
+    color: white;
+    margin-top: 30PX;
+    margin-bottom: 30px;
+    line-height: 23px;
+}
+.leftitems button{
+    width: 7vw;
+    height: 2vw;
+    letter-spacing: 2px;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: white;
+    color: var(--maincolro);
+    font-weight: 900;
+}
+.navlink a:hover{
+    color:orange;
+}
+.rightitems{
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 20vw;
+    position: relative;
+    top: 80px;
+    display: flex;
+    right: 30px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    
+    margin-top: 20px;
+    border-radius: 9px;
+}
+.rightitems h2{
+    width: 80%;
+    height: 3vw;
+    background-color:white;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    color: var(--maincolro);
+}
+.rightitems input{
+    border-bottom: 2px solid var(--maincolro);
+    width: 80%;
+    margin-top: 25px;
+    font-size: 18px;
+}
+.rightitems button{
+    background-color: var(--maincolro);
+    color: black;
+    width: 80%;
+    margin-top: 20px;
+    height: 2.5vw; 
+    font-size: 20px;
+    border-radius: 9px;
+}
+.rightitems button:hover{
+    background-color: white;
+    color: var(--maincolro);
+}
+h4 span{
+    color: var(--maincolro);
+    font-weight: 100;
+}
+button +h4{
+    margin-top: 20px;
+
+}
+h4{
+    color: white;
+}
+h5{
+    color: white;
+    margin-top: 10px;
+}
+.icon i{
+    color: white;
+    font-size: 25px;
+}
+.icon i:hover{
+    color: var(--maincolro);
+}
+.icon{
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+
+    margin-top: 20px;
+}
+.aftmed1{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1128px) {
+    .rightitems{
+        width: 30vw;
+        height: 57vh;
+    }
+    .searchnav button{
+        font-size: 1.3vw;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+
+    }
+    body::before{
+        height: 120vh;
+    }
+}
+@media (max-width:990px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top:-20vh;
+        margin-left: -5vw;
+    }
+    body::before{
+        height: 200vh;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+width: 100vw;
+    }
+.aftmed1{
+    width: 100vw;
+    justify-content: space-around;
+align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+
+.searchnav{
+   
+        display: none;
+}
+.aftmed2{
+    width: 90vw;
+}
+.leftitems{
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.leftitems p,button{
+    font-size: 25px;
+line-height: 40px;
+}
+.leftitems button{
+    width: 30vw;
+    height:5vw;
+    border-radius: 9px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rightitems{
+    width: 60vw;
+    min-height: 80vh;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10vw;
+    height: 70vh;
+    max-width: 120vh;
+    justify-content: space-around;
+    padding: 20px;font-size: 2em;
+
+}
+.rightitems h2{
+    height: 8vw;
+    font-size: 30px;
+}
+.rightitems button{
+    height: 6vw;
+}
+.rightitems i{
+    font-size: 4vw;
+}
+
+
+}
+@media (max-width:427px) {
+    .leftitems{
+        align-self: center;
+        display: flex;
+       justify-self: center;
+       margin-left: 30px;
+       width: 103vw;
+    
+    }
+h1{
+    font-size: 7vh;
+}
+.leftitems p{
+    font-size: 20px;
+    padding: 30px;
+}
+body::before{
+    height: 220vh;
+}
+    .main{
+        padding-left:0 ;
+    }
+    .leftitems button{
+        height: 10vw;
+        width: 40vw;
+    }
+    .rightitems{
+        margin-left: 25vw;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        width: 80vw;
+    }
+    .rightitems h2{
+        height: 15vw;
+    }
+    .rightitems input{
+height: 10vw;
+    }
+    .rightitems button{
+        height: 10vw;
+    }
+    .rightitems i{
+        font-size: 10vw;
+    }
+}
+@media (max-width:322px) {
+    .rightitems{
+        margin-left: 27vw;
+    }
+}
+@media (max-width:768px) {
+    .navlink ul li a {
+    display: none;
+}
+.navlink ul  i{
+    display: block;
+    font-size: 30px;
+}
+
+}
